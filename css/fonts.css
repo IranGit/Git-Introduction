@@ -1,3 +1,11 @@
+/*Farsi*/
+@font-face {
+  font-family: 'Farsi-kodak';
+  font-style: normal;
+  font-weight: 400;
+  src:url("font/kodak.ttf") format("truetype") ;
+}
+
 /* latin-ext */
 @font-face {
   font-family: 'Cutive Mono';
