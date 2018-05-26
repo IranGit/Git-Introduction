@@ -93,11 +93,31 @@
     </div>
 
     <div id="step-2" class="step" data-x="420" data-y="-70" data-z="-250" data-rotate-z="45" data-rotate-y="-45" data-rotate-order="zyx">
-        <p>Slide two</p>
+        <p style="font-size: 20px;text-align: justify; direction: RTL;">
+            راه دیگری برای دسترسی به مخزن وجود دارد
+            که به کلونینگ مشهور است.
+            درست مثل بررسی مخزن در سایر سیستم‌ها،
+            اجرای کد git clone repository URL یک کپی کامل از مخزن مورد نظر به سیستم شما منتقل خواهد کرد.
+            سپس، می‌توانید روی آن کار کرده و تغییرات دلخواه را در آن اعمال کنید. روند اعمال تغییرات ساخت تغییرات، اعمال موقت آن‌ها بدون وارد کردن در مخزن اصلی (staging)، اعمال تغییر در مخزن یا کامیت (commit) را شامل می‌شود.
+            <img src="img/stage.png">
+        </p>
     </div>
 
     <div id="step-3" class="step" data-x="700" data-y="350" data-z="-350" data-rotate-z="90" data-rotate-y="-90" data-rotate-order="zyx">
-        <p>Slide three</p>
+        <p style="font-size: 20px;text-align: justify; direction: RTL;">
+            با دستور
+            <span style="color: red">git status</span>
+            ، می‌توانید از آخرین تغییرات پروژه باخبر شوید؛ به عبارت دیگر، خواهید فهمید که چه فایل‌هایی را تغییر داده‌اید؟ آیا فایل جدیدی ساخته‌اید؟ و یا کدام فایل‌ها را حذف کرده‌اید؟
+            صرفاً اگر فایل تغییر کند به این معنی نیست که حتماً می‌خواهید کامیت هم بشود؛ این تصمیم با شما است که کدام فایل‌ها را کامیت کنید و برای این کار با دستور
+            <span style="color: red">git add filename</span>
+            به طور واضحی فایل‌های مورد نظرتان را برای کامیت شدن، مشخص می‌کنید. با این عمل، اصطلاحاً گفته می‌شود که فایل‌ها به
+            <span style="color: red">Satging Area</span>
+            اضافه شده‌اند.
+
+            کامیت، تمام تغییراتی را که با دستور git add در حالت Stage قرار داده‌اید را در برخواهد گرفت؛ برای ثبت همهٔ این تغییرات در دیتابیس گیت، باید از دستور git commit استفاده کنید که می‌تواند یک پیام کوچک در مورد تغییرات را هم با افزودن آپشن "m "message- به همراه داشته باشد (کامنت مد نظر را بایستی جایگزین واژهٔ message کرد.)
+            <img style="width: 600px;" src="img/commit.gif">
+
+        </p>
     </div>
 
     <div id="step-4" class="step" data-x="422" data-y="780" data-z="-250" data-rotate-z="135" data-rotate-y="-135" data-rotate-order="zyx">
